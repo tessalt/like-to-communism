@@ -7,8 +7,8 @@
     var oldValue = textNode.textContent;
     var match = oldValue.match(/like([sd]?)/);
     if (match) {
-      var suffix = match[1] === 'd' ? 'ed' : match[1];
-      var newValue = oldValue.replace(/like[sd]?/, 'communism' + suffix);
+      var suffix = match[1] === 'd' ? '\'d' : match[1];
+      var newValue = oldValue.replace(/like[sd]?/, '☭' + suffix);
       if (newValue != oldValue) {
         textNode.textContent = newValue;
       }
